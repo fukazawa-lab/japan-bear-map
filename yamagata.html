@@ -54,7 +54,7 @@
 <body>
 
 <div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
-    <h1 style="text-align:center;">山形県クマ遭遇予測マップ</h1>
+    <h1 style="text-align:center;">札幌市クマ遭遇予測マップ</h1>
 
 
         <!-- タイトル下に斜め線・日時 -->
@@ -67,7 +67,7 @@
                   transparent 10px
               );
               padding:5px; border-radius:4px;">
-        <strong>Updated: 2025.10.18 08:23:52</strong>
+        <strong>Updated: 2025.10.18 23:10:41</strong>
     </p>
     
     <!-- 追加部分：場所を選ぶリンク -->
@@ -79,23 +79,54 @@
 </p>
 
     <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-        このマップは、上智大学 深澤研究室で開発したモデルを使用し、山形県のオープンデータ
-        に基づき山形県のクマ遭遇確率を予測したものです。  
+        このマップは、上智大学 深澤研究室で開発したモデルを使用し、山形県のデータ
+        に基づき山形県内のクマ遭遇確率を予測したものです。  
     </p>
 
+    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
     <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left;">
-        <li>赤いマーカーは遭遇確率が高い場所、黄色に近いマーカーは低い場所を示します。マーカーは直接的な点ではなく、その周辺での警戒を示しています。</li>
-        <li>×は2025年のクマとの遭遇を表しています。</li>
-        <li>黄色に近いマーカーやマーカーがない場所でも、クマと遭遇しないわけではありません。</li>
-        <li>このマップはあくまで注意喚起の目的で作成された予測マップです。他の情報や現地の標識等とあわせて活用してください。</li>
+        <li>赤いマーカーは遭遇確率が高い場所、黄色に近いマーカーは低い場所を示します。</li>
+        <li>マーカーは直接的な点ではなく、その周辺での警戒を示しています。</li>
+        <li>×は直近のクマとの遭遇を表しています。</li>
+        <li>このマップはあくまで注意喚起の目的で作成された予測マップです。他の情報や現地の最新の情報等とあわせて活用してください。</li>
     </ul>
+    </p>
+</div>
 
-<p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+
+    
+    
+            <div class="folium-map" id="map_17a3f6ce8fc1b9bdc5c2505017574493" ></div>
+        
+
+<div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
+ <br> <br>
+    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+        <strong>このマップの予測はどのくらい当たるの？</strong>
+        <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
+           <li>このマップで赤に近いマーカーだからといって100％クマに遭遇するわけではありません。また、黄色や薄いマーカーだからといって安全というわけでもありません。</li>
+        <li>下のグラフは、予測モデルの精度を示しています。
+        ここでいう「精度」とは、どの遭遇確率で「クマと遭遇した」と判断するか（閾値）によって変わります。
+        閾値を低く設定すると、たとえ低い遭遇確率でもクマと遭遇すると判断するため、遭遇を見逃す可能性は減りますが、外れる予測も増えてしまいます（再現率が高いが適合率が低い）。
+        逆に、閾値を高く設定すると、より確実な場所だけを予測できるため予測は当たりやすくなりますが、そのぶん見逃す遭遇も増えてしまいます（再現率が低いが適合率が高い）。
+        このように、予測の当たりやすさと実際の遭遇を見逃すリスクはトレードオフの関係にあります。
+        そのため、なるべく安全に行動するには、低い遭遇確率であっても十分に警戒して行動することが重要です。</li>
+        </ul>
+<div style="text-align:center; max-width:800px; margin:auto; margin-top:10px;">
+    <img src="yamagata.png" 
+         alt="Precision & Recallグラフ" 
+         style="width:100%; height:auto; border:1px solid #ccc;">
+</div>
+
+    </p>
+
+
+    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
     <strong>技術的な内容・参考記事：</strong>
     <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
         <li>
             本マップは以下の論文をもとに作成しています:<br>
-            <i> Shin Nakamoto and Yusuke Fukazawa. "Bear warning: predicting encounters using temporal, environmental, and demographic features." 
+            <i>Shin Nakamoto and Yusuke Fukazawa. "Bear warning: predicting encounters using temporal, environmental, and demographic features." 
             International Journal of Data Science and Analytics (2025): 1-19. <a href="https://rdcu.be/exqdh" target="_blank">論文リンク</a></i>
         </li>
         <li><a href="https://www.sophia.ac.jp/jpn/article/news/release/250930_bear/" target="_blank">クマとの遭遇リスクをAIで予測するモデルを開発（上智大学）</a></li>
@@ -127,11 +158,6 @@
 
 
 
-
-    
-    
-            <div class="folium-map" id="map_17a3f6ce8fc1b9bdc5c2505017574493" ></div>
-        
 
 <div style="text-align:center; padding:10px; background-color:#f9f9f9; border-top:2px solid #ccc; font-size:12px;">
     &copy; 2025 Yusuke Fukazawa All rights reserved.<br>

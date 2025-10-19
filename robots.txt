@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fukazawa-lab.github.io/japan-bear-map/sitemap.xml

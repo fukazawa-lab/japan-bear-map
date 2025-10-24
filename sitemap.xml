@@ -2,12 +2,14 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url><loc>https://fukazawa-lab.github.io/japan-bear-map/index.html</loc></url>
+  <url><loc>https://fukazawa-lab.github.io/japan-bear-map/akita.html</loc></url>
   <url><loc>https://fukazawa-lab.github.io/japan-bear-map/aomori.html</loc></url>
   <url><loc>https://fukazawa-lab.github.io/japan-bear-map/miyagi.html</loc></url>
-  <url><loc>https://fukazawa-lab.github.io/japan-bear-map/index.html</loc></url>
   <url><loc>https://fukazawa-lab.github.io/japan-bear-map/yamagata.html</loc></url>
   <url><loc>https://fukazawa-lab.github.io/japan-bear-map/fukushima.html</loc></url>
   <url><loc>https://fukazawa-lab.github.io/japan-bear-map/tochigi.html</loc></url>
   <url><loc>https://fukazawa-lab.github.io/japan-bear-map/tokyo.html</loc></url>
+  <url><loc>https://fukazawa-lab.github.io/japan-bear-map/niigata.html</loc></url>
   <url><loc>https://fukazawa-lab.github.io/japan-bear-map/sapporo.html</loc></url>
 </urlset>

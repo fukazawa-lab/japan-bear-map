@@ -5,18 +5,18 @@
 <html>
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>東京都クマ遭遇AI予測マップ｜上智大学 深澤研究室</title>
-<meta name="description" content="東京都におけるクマ遭遇リスクをAIで予測した地図。上智大学 深澤研究室が作成。熊の出没傾向や予測確率を地域別に表示。">
-<meta name="keywords" content="クマ, 熊, 遭遇予測, AI, 上智大学, 深澤研究室, 東京都, 熊マップ, bear, map, prediction">
-<meta property="og:title" content="東京都クマ遭遇予測マップ｜上智大学 深澤研究室">
-<meta property="og:description" content="上智大学 深澤研究室によるAIモデルで、東京都のクマ遭遇リスクを予測。予測精度グラフや月別推移も掲載。">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://fukazawa-lab.github.io/japan-bear-map/tokyo.html">
-<meta property="og:image" content="https://fukazawa-lab.github.io/japan-bear-map/tokyo.png">
-<meta name="author" content="Yusuke Fukazawa, Sophia University">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京都クマ遭遇AI予測マップ｜上智大学 深澤研究室</title>
+    <meta name="description" content="東京都におけるクマ遭遇リスクをAIで予測した地図。上智大学 深澤研究室が作成。熊の出没傾向や予測確率を地域別に表示。">
+    <meta name="keywords" content="クマ, 熊, 遭遇予測, AI, 上智大学, 深澤研究室, 東京都, 熊マップ, bear, map, prediction">
+    <meta property="og:title" content="東京都クマ遭遇予測マップ｜上智大学 深澤研究室">
+    <meta property="og:description" content="上智大学 深澤研究室によるAIモデルで、東京都のクマ遭遇リスクを予測。予測精度グラフや月別推移も掲載。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fukazawa-lab.github.io/japan-bear-map/tokyo.html">
+    <meta property="og:image" content="https://fukazawa-lab.github.io/japan-bear-map/tokyo.png">
+    <meta name="author" content="Yusuke Fukazawa, Sophia University">
+    
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -69,50 +69,65 @@
 </head>
 <body>
 
-
-<div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
-    <h1 style="text-align:center;">東京都クマ遭遇AI予測マップ</h1>
-
-
-        <!-- タイトル下に斜め線・日時 -->
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:center; 
-              background: repeating-linear-gradient(
-                  135deg,
-                  rgba(255,165,0,0.2),
-                  rgba(255,165,0,0.2) 5px,
-                  transparent 5px,
-                  transparent 10px
-              );
-              padding:5px; border-radius:4px;">
-        <strong>Updated: 2025.10.23 13:19:46</strong>
-    </p>
+    <div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
+        <h1 style="text-align:center;">東京都クマ遭遇AI予測マップ</h1>
     
-    <!-- 追加部分：場所を選ぶリンク -->
-   <!-- 場所選択リンク（左寄せ）-->
-<p style="font-size:18px; font-weight:bold; max-width:800px; margin:auto; text-align:left; color:#333; 
-          border-top:2px solid rgba(255,165,0,0.5); border-bottom:2px solid rgba(255,165,0,0.5); 
-          padding:10px 0;">
-    <a href="index.html">秋田県</a> | <a href="aomori.html">青森県</a> | <a href="yamagata.html">山形県</a> | <a href="miyagi.html">宮城県</a> | <a href="fukushima.html">福島県</a> | <a href="tochigi.html">栃木県</a> | <a href="morioka.html">盛岡市</a> | <a href="sapporo.html">札幌市</a> | <a href="tokyo.html">東京都</a>
-</p>
-
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-        このマップは、上智大学 深澤研究室で開発したモデルを使用し、東京都のデータ
-        に基づき東京都内のクマ遭遇確率を予測したものです。  
-    </p>
-
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-    <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left;">
-        <li>赤いマーカーは遭遇確率が高い場所、黄色に近いマーカーは低い場所を示します。</li>
-        <li>マーカーは直接的な点ではなく、その周辺での警戒を示しています。</li>
-        <li>×は直近のクマとの遭遇を表しています。</li>
-        <li>このマップはあくまで注意喚起の目的で作成された予測マップです。他の情報や現地の最新の情報等とあわせて活用してください。</li>
-        <li>本マップのアップデートや追加などはX上で発信しております。<a href=https://x.com/fukazawa_lab>X.com（旧Twitter）</a></li>
-    </ul>
-    </p>
-</div>
-
-
-
+        <!-- タイトル下に斜め線・日時 -->
+        <p style="font-size:14px; max-width:800px; margin:auto; text-align:center; 
+                  background: repeating-linear-gradient(
+                      135deg,
+                      rgba(255,165,0,0.2),
+                      rgba(255,165,0,0.2) 5px,
+                      transparent 5px,
+                      transparent 10px
+                  );
+                  padding:5px; border-radius:4px;">
+            <strong>Updated: 2025.10.24 10:18:15</strong>
+        </p>
+        
+        <!-- 県別リンク -->
+        <p style="font-size:18px; font-weight:bold; max-width:800px; margin:auto; text-align:left; color:#333; 
+                  border-top:2px solid rgba(255,165,0,0.5); border-bottom:2px solid rgba(255,165,0,0.5); 
+                  padding:10px 0;">
+            <a href="akita.html">秋田県</a> | <a href="aomori.html">青森県</a> | <a href="yamagata.html">山形県</a> | <a href="yamagata.html">新潟県</a>
+            <a href="miyagi.html">宮城県</a> | <a href="fukushima.html">福島県</a> | <a href="tochigi.html">栃木県</a> | 
+            <a href="morioka.html">盛岡市</a> | <a href="sapporo.html">札幌市</a> | <a href="tokyo.html">東京都</a>
+        </p>
+    
+        <!-- トップページに戻るリンク（ボタン風） -->
+        <p style="text-align:center; margin-top:15px;">
+            <a href="index.html" style="
+                display:inline-block;
+                padding:8px 16px;
+                background-color:#FFA500;
+                color:white;
+                text-decoration:none;
+                font-weight:bold;
+                border-radius:4px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            ">
+                トップページに戻る
+            </a>
+        </p>
+    
+        <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+            このマップは、上智大学 深澤研究室で開発したモデルを使用し、東京都のデータ
+            に基づき東京都内のクマ遭遇確率を予測したものです。  
+        </p>
+    
+        <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+            <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left;">
+                <li>赤いマーカーは遭遇確率が高い場所、黄色に近いマーカーは低い場所を示します。</li>
+                <li>マーカーは直接的な点ではなく、その周辺での警戒を示しています。</li>
+                <li>×は直近のクマとの遭遇を表しています。</li>
+                <li>このマップはあくまで注意喚起の目的で作成された予測マップです。他の情報や現地の最新の情報等とあわせて活用してください。</li>
+                <li>本マップのアップデートや追加などはX上で発信しております。<a href=https://x.com/fukazawa_lab>X.com（旧Twitter）</a></li>
+            </ul>
+        </p>
+    
+    
+    </div>
+    
     
     
 <div style="
@@ -159,93 +174,93 @@
             <div class="folium-map" id="map_cafdd0e1fb5acaf3ef0ee7961d3ec68a" ></div>
         
 
-<div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
- <br> <br>
-
-
-<p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-        <strong>このマップの予測はどのくらい当たるの？</strong>
+    <div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
+     <br> <br>
+    
+    
+    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+            <strong>このマップの予測はどのくらい当たるの？</strong>
+            <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
+               <li>このマップで赤に近いマーカーだからといって100％クマに遭遇するわけではありません。また、黄色や薄いマーカーだからといって安全というわけでもありません。</li>
+            <li>下のグラフは、予測モデルの精度を示しています。
+            ここでいう「精度」とは、どの遭遇確率で「クマと遭遇した」と判断するか（閾値）によって変わります。
+            閾値を低く設定すると、たとえ低い遭遇確率でもクマと遭遇すると判断するため、遭遇を見逃す可能性は減りますが、外れる予測も増えてしまいます（再現率が高いが適合率が低い）。
+            逆に、閾値を高く設定すると、より確実な場所だけを予測できるため予測は当たりやすくなりますが、そのぶん見逃す遭遇も増えてしまいます（再現率が低いが適合率が高い）。
+            このように、予測の当たりやすさと実際の遭遇を見逃すリスクはトレードオフの関係にあります。
+            そのため、なるべく安全に行動するには、低い遭遇確率であっても十分に警戒して行動することが重要です。</li>
+            </ul>
+    <div style="text-align:center; max-width:800px; margin:auto; margin-top:10px;">
+        <img src="tokyo.png" 
+             alt="Precision & Recallグラフ" 
+             style="width:100%; height:auto; border:1px solid #ccc;">
+    </div>
+    
+        </p>
+    
+    
+        <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+            <strong>クマの遭遇件数はどれぐらい増えているの？</strong>
+            <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
+               <li>このグラフは、東京都における熊の遭遇数を直近3年間（月単位）で示した棒グラフです。</li>
+            <li>グラフから、月ごとの熊遭遇の増減傾向や、季節的なピークが一目でわかります。例えば、春〜初夏や秋に遭遇件数が増える傾向が見られます。</li>
+            </ul>
+    <div style="text-align:center; max-width:800px; margin:auto; margin-top:10px;">
+        <img src="tokyo_bear_recent3years.png" 
+             alt="遭遇件数の推移グラフ" 
+             style="width:100%; height:auto; border:1px solid #ccc;">
+    </div>
+    
+        </p>
+    
+    
+        <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+        <strong>技術的な内容・参考記事：</strong>
         <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
-           <li>このマップで赤に近いマーカーだからといって100％クマに遭遇するわけではありません。また、黄色や薄いマーカーだからといって安全というわけでもありません。</li>
-        <li>下のグラフは、予測モデルの精度を示しています。
-        ここでいう「精度」とは、どの遭遇確率で「クマと遭遇した」と判断するか（閾値）によって変わります。
-        閾値を低く設定すると、たとえ低い遭遇確率でもクマと遭遇すると判断するため、遭遇を見逃す可能性は減りますが、外れる予測も増えてしまいます（再現率が高いが適合率が低い）。
-        逆に、閾値を高く設定すると、より確実な場所だけを予測できるため予測は当たりやすくなりますが、そのぶん見逃す遭遇も増えてしまいます（再現率が低いが適合率が高い）。
-        このように、予測の当たりやすさと実際の遭遇を見逃すリスクはトレードオフの関係にあります。
-        そのため、なるべく安全に行動するには、低い遭遇確率であっても十分に警戒して行動することが重要です。</li>
+            <li>
+                本マップは以下の論文をもとに作成しています:<br>
+                <i>1.Shin Nakamoto and Yusuke Fukazawa. "Bear warning: predicting encounters using temporal, environmental, and demographic features." 
+                International Journal of Data Science and Analytics (2025): 1-19. <a href="https://rdcu.be/exqdh" target="_blank">論文リンク</a></i><br>
+                <i>2.中許眞，深澤佑介: 秋田県におけるクマの出没予測モデルの構築と特徴量の重要性分析, 情報処理学会第87回全国大会, 2025. <a href="http:/x.gd/XFxrX" target="_blank">リンク</a></i><br>
+                <i>3.中許眞，深澤佑介: 大規模言語モデルを用いたクマ類による人身被害予測, 人工知能学会全国大会, 2024. <a href="http://x.gd/mnfD9" target="_blank">リンク</a></i>
+            </li>
+            <li><a href="https://www.sophia.ac.jp/jpn/article/news/release/250930_bear/" target="_blank">クマとの遭遇リスクをAIで予測するモデルを開発（上智大学）</a></li>
+            <li><a href="https://www.akt.co.jp/news?sel=20251021-00000004-AKT-2" target="_blank">AI分析がクマ被害防止の一助に！？上智大学の研究チーム、クマの出没傾向予測システムを開発中（秋田テレビ）</a></li>
+            <li><a href="https://newsdig.tbs.co.jp/articles/-/2241549" target="_blank">開園前の保育園にクマが出没　キウイが実った木を揺らす様子が…AIがクマとの遭遇をリスクを減らす！
+    （TBS）</a></li>
+            <li><a href="https://mainichi.jp/articles/20251010/k00/00m/040/203000c" target="_blank">AIでクマとの遭遇リスクを予測　6割以上の精度　上智大の研究（毎日新聞）</a></li>
+            <li><a href="https://mainichi.jp/articles/20251011/k00/00m/040/080000c" target="_blank">＜1分で解説＞AIがクマ遭遇リスクを予測　的中率は何％?（毎日新聞）</a></li>
+            <li><a href="https://www.scmp.com/week-asia/health-environment/article/3329116/japanese-scientists-invent-ai-tool-predict-bear-encounters-attacks-rise?module=perpetual_scroll_0&pgtype=article" target="_blank">Japanese scientists invent AI tool to predict bear encounters as attacks rise（South China Morning Post）</a></li>
+            <li><a href="https://www.asahi.com/articles/ASTBP30X3TBPOXIE01HM.html" target="_blank">「クマ99%」自動カメラに姿、AI判定でキャッチ　クマ対策もDX（朝日新聞）</a></li>
         </ul>
-<div style="text-align:center; max-width:800px; margin:auto; margin-top:10px;">
-    <img src="tokyo.png" 
-         alt="Precision & Recallグラフ" 
-         style="width:100%; height:auto; border:1px solid #ccc;">
-</div>
-
     </p>
-
-
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-        <strong>クマの遭遇件数はどれぐらい増えているの？</strong>
-        <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
-           <li>このグラフは、東京都における熊の遭遇数を直近3年間（月単位）で示した棒グラフです。</li>
-        <li>グラフから、月ごとの熊遭遇の増減傾向や、季節的なピークが一目でわかります。例えば、春〜初夏や秋に遭遇件数が増える傾向が見られます。</li>
-        </ul>
-<div style="text-align:center; max-width:800px; margin:auto; margin-top:10px;">
-    <img src="tokyo_bear_recent3years.png" 
-         alt="遭遇件数の推移グラフ" 
-         style="width:100%; height:auto; border:1px solid #ccc;">
-</div>
-
-    </p>
-
-
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-    <strong>技術的な内容・参考記事：</strong>
-    <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
-        <li>
-            本マップは以下の論文をもとに作成しています:<br>
-            <i>1.Shin Nakamoto and Yusuke Fukazawa. "Bear warning: predicting encounters using temporal, environmental, and demographic features." 
-            International Journal of Data Science and Analytics (2025): 1-19. <a href="https://rdcu.be/exqdh" target="_blank">論文リンク</a></i><br>
-            <i>2.中許眞，深澤佑介: 秋田県におけるクマの出没予測モデルの構築と特徴量の重要性分析, 情報処理学会第87回全国大会, 2025. <a href="http:/x.gd/XFxrX" target="_blank">リンク</a></i><br>
-            <i>3.中許眞，深澤佑介: 大規模言語モデルを用いたクマ類による人身被害予測, 人工知能学会全国大会, 2024. <a href="http://x.gd/mnfD9" target="_blank">リンク</a></i>
-        </li>
-        <li><a href="https://www.sophia.ac.jp/jpn/article/news/release/250930_bear/" target="_blank">クマとの遭遇リスクをAIで予測するモデルを開発（上智大学）</a></li>
-        <li><a href="https://www.akt.co.jp/news?sel=20251021-00000004-AKT-2" target="_blank">AI分析がクマ被害防止の一助に！？上智大学の研究チーム、クマの出没傾向予測システムを開発中（秋田テレビ）</a></li>
-        <li><a href="https://newsdig.tbs.co.jp/articles/-/2241549" target="_blank">開園前の保育園にクマが出没　キウイが実った木を揺らす様子が…AIがクマとの遭遇をリスクを減らす！
-（TBS）</a></li>
-        <li><a href="https://mainichi.jp/articles/20251010/k00/00m/040/203000c" target="_blank">AIでクマとの遭遇リスクを予測　6割以上の精度　上智大の研究（毎日新聞）</a></li>
-        <li><a href="https://mainichi.jp/articles/20251011/k00/00m/040/080000c" target="_blank">＜1分で解説＞AIがクマ遭遇リスクを予測　的中率は何％?（毎日新聞）</a></li>
-        <li><a href="https://www.scmp.com/week-asia/health-environment/article/3329116/japanese-scientists-invent-ai-tool-predict-bear-encounters-attacks-rise?module=perpetual_scroll_0&pgtype=article" target="_blank">Japanese scientists invent AI tool to predict bear encounters as attacks rise（South China Morning Post）</a></li>
-        <li><a href="https://www.asahi.com/articles/ASTBP30X3TBPOXIE01HM.html" target="_blank">「クマ99%」自動カメラに姿、AI判定でキャッチ　クマ対策もDX（朝日新聞）</a></li>
-    </ul>
-</p>
-
-
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-<strong>謝辞：</strong><br>
-        本研究では次のデータを使用しました。提供機関様に感謝します。
-    <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left;">
-            <li>オープンデータ（東京都）：<a href="https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/bear/data" target="_blank">データ</a></li>
-            <li>土地被覆図（JAXA 宇宙航空研究開発機構）：<a href="https://www.eorc.jaxa.jp/ALOS/jp/dataset/lulc_j.htm" target="_blank">ALOS土地被覆図 v25.04</a></li>
-            <li>道路データ（国土交通省 国土情報部）：<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N04.html" target="_blank">道路中心線データ（KSJ-N04）</a></li>
-            <li>人口及び世帯データ（総務省統計局）：<a href="https://www.e-stat.go.jp/gis/statmap-search?page=1&type=1&toukeiCode=00200521&toukeiYear=2020&aggregateUnit=Q&serveyId=Q002005112020&statsId=T001102" target="_blank">国勢調査人口・世帯データ</a></li>
-            <li>標高データ（国土交通省 国土地理院）：<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-G04-a.html" target="_blank">標高データ（KSJ-G04）</a></li>
-        </ul>        
-    </p>
-
-    <p style="font-size:13px; max-width:800px; margin:auto; text-align:left; color:#555; border-top:1px solid rgba(255,165,0,0.4); padding-top:8px;">
-        ※このマップおよび掲載内容の無断転載・再配布を禁止します。<br>
-        ご利用や転載に関するお問い合わせは、fukazawa at sophia.ac.jpまでご連絡ください。
-    </p>
-</div>
-
-
-
-
-
-<div style="text-align:center; padding:10px; background-color:#f9f9f9; border-top:2px solid #ccc; font-size:12px;">
-    &copy; 2025 Yusuke Fukazawa All rights reserved.<br>
-</div>
-
+    
+    
+        <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+    <strong>謝辞：</strong><br>
+            本研究では次のデータを使用しました。提供機関様に感謝します。
+        <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left;">
+                <li>オープンデータ（東京都）：<a href="https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/bear/data" target="_blank">データ</a></li>
+                <li>土地被覆図（JAXA 宇宙航空研究開発機構）：<a href="https://www.eorc.jaxa.jp/ALOS/jp/dataset/lulc_j.htm" target="_blank">ALOS土地被覆図 v25.04</a></li>
+                <li>道路データ（国土交通省 国土情報部）：<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N04.html" target="_blank">道路中心線データ（KSJ-N04）</a></li>
+                <li>人口及び世帯データ（総務省統計局）：<a href="https://www.e-stat.go.jp/gis/statmap-search?page=1&type=1&toukeiCode=00200521&toukeiYear=2020&aggregateUnit=Q&serveyId=Q002005112020&statsId=T001102" target="_blank">国勢調査人口・世帯データ</a></li>
+                <li>標高データ（国土交通省 国土地理院）：<a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-G04-a.html" target="_blank">標高データ（KSJ-G04）</a></li>
+            </ul>        
+        </p>
+    
+        <p style="font-size:13px; max-width:800px; margin:auto; text-align:left; color:#555; border-top:1px solid rgba(255,165,0,0.4); padding-top:8px;">
+            ※このマップおよび掲載内容の無断転載・再配布を禁止します。<br>
+            ご利用や転載に関するお問い合わせは、fukazawa at sophia.ac.jpまでご連絡ください。
+        </p>
+    </div>
+    
+    
+    
+    
+    
+    <div style="text-align:center; padding:10px; background-color:#f9f9f9; border-top:2px solid #ccc; font-size:12px;">
+        &copy; 2025 Yusuke Fukazawa All rights reserved.<br>
+    </div>
+    
 </body>
 <script>
     

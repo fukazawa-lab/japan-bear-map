@@ -7,7 +7,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yamanashi Bear Encounter Prediction Map (AI Model) | Fukazawa Lab, Sophia University</title>
+    <title>Yamanashi Bear Encounter AI Prediction Map | Fukazawa Lab, Sophia University</title>
     <meta name="description" content="AI predicts bear encounter risks in Yamanashi. Created by Fukazawa Laboratory, Sophia University. Displays regional bear encounter trends and prediction probabilities.">
     <meta name="keywords" content="bear, encounter prediction, AI, Sophia University, Fukazawa Lab, Yamanashi, map, wildlife, prediction">
     <meta property="og:title" content="Yamanashi Bear Encounter Prediction Map | Fukazawa Lab, Sophia University">
@@ -70,7 +70,7 @@
 <body>
 
         <div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
-            <h1 style="text-align:center;">Yamanashi Bear Encounter Prediction Map (AI Model)</h1>
+            <h1 style="text-align:center;">Yamanashi Bear Encounter AI Prediction Map</h1>
         
             <p style="font-size:14px; max-width:800px; margin:auto; text-align:center;
                       background: repeating-linear-gradient(
@@ -81,7 +81,7 @@
                           transparent 10px
                       );
                       padding:5px; border-radius:4px;">
-                <strong>Updated: 2025.10.30 13:12:59</strong>
+                <strong>Updated: 2025.10.31 07:57:26</strong>
             </p>
         
             <p style="font-size:18px; font-weight:bold; max-width:800px; margin:auto; text-align:left; color:#333;
@@ -126,14 +126,15 @@
                 to predict bear encounter probabilities across Yamanashi based on local data.
             </p>
         
-            <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left;">
-                <li>Red markers indicate high encounter probabilities, while yellow markers show lower risk areas.</li>
-                <li>Each marker represents an area that requires caution, not a specific point.</li>
-                <li>“×” marks indicate recent bear encounters.</li>
-                <li>Areas without “〇” markers are excluded from predictions due to insufficient data.</li>
-                <li>This prediction map is designed to raise awareness. Always cross-check with other local and official information before acting.</li>
-                <li>We post updates and new releases on <a href="https://x.com/fukazawa_lab">X (formerly Twitter)</a>.</li>
-            </ul>
+ <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left;">
+        <li>The X marks on the map indicate locations where recent bear encounters have occurred.</li>
+        <li>The gradient markers from red to yellow show the probability of bear encounters estimated by AI. The closer the color is to red, the higher the encounter risk.</li>
+        <li>Each marker does not represent a precise point but the probability of an encounter in the surrounding area. Markers are placed at the center of 1 km grid cells.</li>
+        <li>Areas without markers are excluded from prediction due to insufficient data. Please note that no encounter estimation has been made for those areas.</li>
+        <li>This map is created solely for awareness and caution purposes. Always prioritize official information and the latest local updates from your municipality.</li>
+        <li>Updates and announcements regarding this map are shared on <a href="https://x.com/fukazawa_lab">X.com (formerly Twitter)</a>.</li>
+    </ul>
+    
         </div>
         
     
@@ -182,33 +183,54 @@
     <div style="padding:10px; background-color:rgba(255, 165, 0, 0.2); border-bottom:2px solid rgba(255, 165, 0, 0.4);">
     <br><br>
     
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-    <strong>How accurate are these predictions?</strong>
+  <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+    <strong>Which color markers should I be most cautious about?</strong>
     <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
-        <li>Even if a marker appears red, it does not mean you will definitely encounter a bear. Likewise, yellow or pale markers do not guarantee safety.</li>
-        <li>The chart below shows the model’s accuracy. Accuracy varies depending on the threshold—the encounter probability at which the model decides “a bear is present.”</li>
-        <li>Lowering the threshold reduces missed encounters but increases false positives (high recall, low precision). Raising it has the opposite effect (low recall, high precision).</li>
-        <li>Because of this trade-off, you should act cautiously even in areas with low predicted probabilities.</li>
+        <li>
+            To avoid missing areas where bear encounters are likely to occur, we recommend exercising caution not only around “High” areas but also around markers labeled as “Moderately High” or, in some municipalities, “Possible.”  
+            Please refer to the next question for a detailed explanation.  
+            Of course, even in areas labeled as “Low,” it does not mean that encounters will never happen.  
+            Always prioritize and check the latest information provided by your local government.
+        </li>
+    </ul>
+</p>
+
+<p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+    <strong>How accurate is this prediction map?</strong>
+    <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
+        <li>Even if a marker is yellow or light in color, it does not guarantee that bears will not appear there. Likewise, a red marker does not mean a 100% chance of an encounter.</li>
+        <li>The accuracy of the AI-based bear encounter prediction model is measured using two key metrics: <strong>precision</strong> and <strong>recall</strong>.</li>
+        <li><strong>Precision</strong> indicates the proportion of correctly predicted bear encounter locations among all locations predicted as “bear encounter.”  
+            For example, if there are 300 markers labeled “Very High” on the map and actual encounters occurred at 150 of those locations, the precision would be 150 ÷ 300 = 0.5 (50%).</li>
+        <li><strong>Recall</strong> represents the proportion of correctly predicted encounters among all actual encounter locations.  
+            For instance, if there were 200 actual encounter points (marked with X), and 150 of them were predicted as “Very High,” the recall would be 150 ÷ 200 = 0.75 (75%).</li>
+        <li>The encounter probability is expressed as a value between 0 and 1:  
+            “Very High” = 0.8–1.0, “High” = 0.6–0.8, “Moderately High” = 0.4–0.6, “Possible” = 0.2–0.4, and “Low” = 0.0–0.2.  
+            As shown in the graph below, focusing only on the “Very High” range (around 0.8 on the graph) increases precision but decreases recall (more missed encounters).</li>
+        <li>To minimize missed encounters, we recommend being cautious even in areas with “Moderately High” (around 0.4) or, depending on the municipality, “Possible” (around 0.2) risk levels.  
+            Again, even areas labeled “Low” do not guarantee zero risk. Always check the latest updates from your local government first.</li>
     </ul>
     <div style="text-align:center; max-width:800px; margin:auto; margin-top:10px;">
-        <img src="yamanashi_en.png"
-             alt="Precision & Recall Chart"
+        <img src="yamanashi_en.png" 
+             alt="Precision & Recall Graph" 
              style="width:100%; height:auto; border:1px solid #ccc;">
     </div>
-    </p>
-    
-    <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
-    <strong>How have bear encounters increased?</strong>
+</p>
+
+<p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
+    <strong>How much have bear encounters increased?</strong>
     <ul style="max-width:800px; margin:auto; font-size:14px; text-align:left; padding-left:20px;">
-        <li>The bar chart below shows monthly bear encounter counts in Yamanashi over the past three years.</li>
-        <li>Seasonal peaks are visible—encounters often increase in spring, early summer, and autumn.</li>
+        <li>This bar chart shows the number of bear encounters in Yamanashi over the past three years, aggregated by month.</li>
+        <li>The graph clearly shows monthly trends and seasonal peaks in bear encounters.  
+            For example, encounters tend to increase in spring to early summer and again in autumn.</li>
     </ul>
     <div style="text-align:center; max-width:800px; margin:auto; margin-top:10px;">
-        <img src="yamanashi_bear_recent3years_en.png"
-             alt="Bear Encounter Trends"
+        <img src="yamanashi_bear_recent3years_en.png" 
+             alt="Trend of Bear Encounter Cases" 
              style="width:100%; height:auto; border:1px solid #ccc;">
     </div>
-    </p>
+</p>
+
     
     <p style="font-size:14px; max-width:800px; margin:auto; text-align:left;">
     <strong>Technical References:</strong>
